@@ -1,0 +1,21 @@
+.Game {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+    margin: auto;
+    color: white;
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 20px #f4f4f4;
+    font-family: "YourGamerFont", sans-serif;
+}
+
+.Game-tablas {
+    border: solid 4px rgb(97, 226, 255);
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+}
