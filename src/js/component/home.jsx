@@ -22,6 +22,7 @@ const Home = () => {
 
   const [nombre1, setNombre1] = useState("");
   const [nombre2, setNombre2] = useState("");
+  const [empate, setEmpate] = useState(false);
 
   const clicGato = (index) => {
     if (tabla[index] === null && !saberGanador(tabla)) {
@@ -30,6 +31,9 @@ const Home = () => {
       setTabla(newTabla);
 
       setPlayer(player === "X" ? "O" : "X");
+    }
+    if (newTabla.every((cell) => cell !== null)) {
+      setEmpate(true);
     }
   };
   const jugador1 = (event) => {
@@ -56,6 +60,9 @@ const Home = () => {
       if (tabla[a] && tabla[a] === tabla[b] && tabla[a] === tabla[c]) {
         return tabla[a];
       }
+    }
+    if (tabla.every((cell) => cell !== null)) {
+      return "Empate";
     }
 
     return null;
@@ -91,6 +98,7 @@ const Home = () => {
       <h1>
         {ganador === "X" && `${nombre1} es el Ganador`}
         {ganador === "O" && `${nombre2} es el Ganador`}
+        {ganador === "Empate" && "¡Es un empate!"}
       </h1>
       <button onClick={reiniciarPartida}>Reiniciar</button>
     </div>

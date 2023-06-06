@@ -5,19 +5,19 @@ body {
 h1 {
     color: rgb(255, 247, 0);
     font-family: fantasy;
-    text-shadow: 0 0 10px #ebe710;
+    text-shadow: 0 0 5px #ebe710;
     font-size: 60px;
 }
 
 h3 {
     color: rgb(255, 255, 255);
     font-family: fantasy;
-    text-shadow: 0 0 8px #ffffff;
+    text-shadow: 0 0 3px #ffffff;
     font-size: 35px;
 }
 label {
     color: rgb(255, 255, 255);
-    font-family: fantasy;
+    font-family: "Press Start 2P", cursive;
     text-shadow: 0 0 1px #ffffff;
     font-size: 18px;
 }
@@ -29,11 +29,13 @@ input {
     border-radius: 5px;
     padding: 1px;
     width: 400px;
-    box-shadow: 0 0 10px #4f9;
+    box-shadow: 0 0 8px #4f9;
 }
 
 button {
     background-color: red;
     color: white;
     box-shadow: 0 0 10px rgb(236, 10, 10);
+    border-radius: 8px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
